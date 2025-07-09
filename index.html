@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vows & Tales Birthday</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday Sandy!</h1>
+            <p class="subtitle">Celebrating 20 years of you </p>
+        </header>
+        
+        <div class="nav-tabs">
+            <button class="tab-btn active" data-tab="welcome">Welcome</button>
+            <button class="tab-btn" data-tab="gallery">Memory Lane</button>
+            <button class="tab-btn" data-tab="messages">Messages</button>
+            <button class="tab-btn" data-tab="movie">CuteFlix</button>
+        </div>
+        
+        <div class="tab-content active" id="welcome">
+            <div class="welcome-section">
+                <h2>Welcome to your birthday scrapbook</h2>
+                <p>Happy Birthday Sarah!</p>                
+                <p>We've created this digital scrapbook to celebrate all our precious memories together. Click through the tabs to explore our friendship journey!</p>
+                <p>This scrapbook is filled with all your favorite things - cute dinos, music, and lots of love from your family & friends!</p>
+        
+                <div class="nav-buttons">
+                    <div></div>
+                    <button class="nav-btn nav-btn-next" data-next="gallery">
+                        Next: Memories <span>→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="gallery">
+            <h2>Memory Lane</h2>
+            <div class="gallery">
+                <!-- Memory cards -->
+                <div class="memory-card">
+                    <img src="images/image.jpg" alt="Memory 1" class="memory-img">
+                    <div class="memory-caption">Beach Trip</div>
+                </div>
+                
+                <div class="memory-card">
+                    <img src="images/image.jpg" alt="Memory 2" class="memory-img">
+                    <div class="memory-caption">Rain dance</div>
+                </div>
+                
+                <div class="memory-card">
+                    <img src="images/image.jpg" alt="Memory 3" class="memory-img">
+                    <div class="memory-caption">Hipoo Birthday</div>
+                </div>
+                
+                <div class="memory-card">
+                   <img src="images/image.jpg" alt="Memory 4" class="memory-img">
+                    <div class="memory-caption">Vacation</div>
+                </div>
+                
+                <div class="memory-card">
+                 <img src="images/image.jpg" alt="Memory 5" class="memory-img">
+                    <div class="memory-caption">Night out</div>
+                </div>
+                
+                <div class="memory-card">
+                  <img src="images/image.jpg" alt="Memory 5" class="memory-img">
+                    <div class="memory-caption">Binge eating</div>
+                </div>
+                
+                <div class="memory-card">
+             <img src="images/image.jpg" alt="Memory 5" class="memory-img">
+                    <div class="memory-caption">Sick leave</div>
+                </div>
+                
+                <div class="memory-card">
+                  <img src="images/image.jpg" alt="Memory 6" class="memory-img">
+                    <div class="memory-caption">Cubbon park</div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev" data-prev="welcome">
+                    <span>←</span> Prev: Welcome
+                </button>
+                <button class="nav-btn nav-btn-next" data-next="messages">
+                    Next: Messages <span>→</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="messages">
+            <h2>Birthday Messages</h2>
+            <div class="messages">
+                <div class="message-card">
+                    <p class="message-author">From Dad</p>
+                    <p>Happy Birthday, sunshine! May your day be as bright, beautiful, and full of joy as you are. ✨</p>
+                </div>
+
+               
+                <div class="message-card">
+                    <p class="message-author">From Mom</p>
+                    <p>Wishing you cake, confetti, chaos (the fun kind), and countless memories today! Happiest Birthday! 🎉🎁</p>
+                </div>
+
+               
+                <div class="message-card">
+                    <p class="message-author">From Sam</p>
+                    <p>Every year, you shine brighter. I’m lucky to know you and celebrate you today. Happy Birthday! 💫💗</p>
+                </div>
+
+               
+                <div class="message-card">
+                    <p class="message-author">From Zozo</p>
+                    <p>Bestie mode: ON! Let’s make this birthday legendary with laughter, love, and lots of sugar! 🎂👯‍♀️</p>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev" data-prev="gallery">
+                    <span>←</span> Prev: Memories
+                </button>
+                <button class="nav-btn nav-btn-next" data-next="movie">
+                    Next: CuteFlix <span>→</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="movie">
+            <h2>CuteFlix</h2>
+            
+            <div class="movie-player">
+                <h3 class="movie-title">Watch Cute Videos</h3>
+                
+                <div class="video-container">
+                    <video id="videoPlayer" controls>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <div class="video-controls">
+                    <button class="video-btn" id="playBtn">Play</button>
+                    <button class="video-btn" id="pauseBtn">Pause</button>
+                    <button class="video-btn" id="fullscreenBtn">Fullscreen</button>
+                </div>
+                
+                <div class="video-playlist">
+                    <div class="video-thumbnail" data-video="images/shreya wish.mp4">
+                        <img src="images/video.png" alt="Cuteness Overload">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Movie day</div>
+                    </div>
+
+                    <div class="video-thumbnail" data-video="images/apoo wish.mp4">
+                       <img src="images/video.png" alt="Cuteness Overload">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Roadtrip</div>
+                    </div>
+
+                    <div class="video-thumbnail" data-video="images/blue.mp4">
+                     <img src="images/video.png"alt="Cuteness Overload">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Us</div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="images/cute.mp4">
+                        <img src="images/video.png" alt="Therapy">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Therapy</div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="images/hugs.mp4">
+                       <img src="images/video.png" alt="Charms & Cheers">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Charms & Cheers</div>
+                    </div>
+                    
+                    <div class="video-thumbnail" data-video="images/ss.mp4">
+                       <img src="images/video.png" alt="Cuties">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Cuties</div>
+                    </div>
+
+                    <div class="video-thumbnail" data-video="images/laughs.mp4">
+                       <img src="images/video.png" alt="Cuties">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Belly Laughs</div>
+                    </div>
+
+                    <div class="video-thumbnail" data-video="images/sankey.mp4">
+                       <img src="images/video.png"alt="Cuties">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Sunsets at Sankey</div>
+                    </div>
+
+                    <div class="video-thumbnail" data-video="images/reel.mp4">
+                        <img src="images/video.png" alt="Cuties">
+                        <div class="play-icon">▶</div>
+                        <div class="video-name">Reels Time</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <button class="nav-btn nav-btn-prev" data-prev="messages">
+                    <span>←</span> Prev: Messages
+                </button>
+                <button class="nav-btn nav-btn-next" data-next="welcome">
+                    Back to Welcome <span>→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="pet-cursor" id="petCursor">🦖</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
